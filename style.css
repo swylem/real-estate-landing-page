@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "JetBrains Mono Regular";
+    src: url("./fonts/JetBrainsMono-Regular.ttf");
+}
+
+* {
+    font-family: "JetBrains Mono Regular";
+}
+
+body {
+    margin: 0 auto;
+    padding: 32px 64px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blackbg-btn,
+.whitebg-btn, 
+.rent-buy-btn button {
+    border: none;
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.blackbg-btn {
+    color: white;
+    background-color: black;
+}
+
+.whitebg-btn {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.nav ul {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.head-content {
+    background: url("./images/hero-image-edited.jpg");
+    background-size: cover;
+    filter: contrast(1.05) saturate(115%) brightness(1.05);
+    border-radius: 48px;
+}
+
+.hero-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 128px 0px 0px 64px;
+}
+
+.hero-img-wrapper h1 {
+    text-transform: uppercase;
+}
+
+.stats-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 50%;
+    gap: 30px
+}
+
+.rent-buy-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 48px;
+}
+
+.rent-buy-select {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 32px 0px 32px;
+    background: #ebeaeb;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.3));
+    gap: 24px;
+}
+
+.rent-buy-tab {
+    border: none;
+    border-bottom: 4px solid transparent;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.rent-buy-tab:not(.active) {
+    color: grey;
+}
+
+.rent-buy-tab.active {
+    border-bottom: 4px solid black;
+}
+
+.rent-buy-options { 
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding: 0px 32px 16px 32px;
+    background-color: #fffafa;
+    filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.3));
+    border-radius: 24px;
+}
+
+.rent-buy-btn {
+    font-size: 18px;
+    color: #014dc1;
+    background-color: #c4c5c5;
+    padding-right: 16px;
+    width: fit-content;
+} 
+
+.rent-buy-btn button {
+    background-color: #c4c5c5;
+    padding-left: 16px;
+    padding-right: 32px;
+}
