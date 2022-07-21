@@ -5,6 +5,7 @@
 
 * {
     font-family: "JetBrains Mono Regular";
+    box-sizing: border-box;
 }
 
 body {
@@ -15,6 +16,15 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+.pushed-right {
+    margin-left: auto;
+}
+
+.icon {
+    font-size: 18px;
+    color: #014dc1;
 }
 
 .blackbg-btn,
@@ -39,9 +49,12 @@ a {
     border: 2px solid black;
 }
 
+/* Head Section */
+
 .head-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 128px;
 }
 
 .nav {
@@ -105,8 +118,8 @@ a {
 
 .rent-buy-select {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     width: fit-content;
     height: fit-content;
     padding: 8px 32px 0px 32px;
@@ -122,6 +135,7 @@ a {
     border-bottom: 4px solid transparent;
     font-size: 16px;
     font-weight: bolder;
+    background: transparent;
 }
 
 .rent-buy-tab:not(.active) {
@@ -135,6 +149,7 @@ a {
 .rent-buy-options { 
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 64px;
     padding: 0px 32px 16px 32px;
@@ -144,8 +159,6 @@ a {
 }
 
 .rent-buy-btn {
-    font-size: 18px;
-    color: #014dc1;
     background-color: #c4c5c5;
     padding-right: 16px;
     width: fit-content;
@@ -155,4 +168,73 @@ a {
     background-color: #c4c5c5;
     padding-left: 16px;
     padding-right: 32px;
+}
+
+/* Popular Section*/
+.popular-headings {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 0px;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.popular-headings-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tile {
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.7));
+    min-width: 352px;
+    width: 352px;
+}
+
+.tile-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    background-color: white;
+}
+
+.tile-img {
+    height: 216px;
+    object-fit: cover;
+}
+
+.tile-info {
+    padding: 4px 24px 16px 24px;
+}
+
+
+.tile-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+}
+
+.icon-wrapper i {
+    margin: 8px;
+}
+
+.tile-action {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
+    margin-top: 24px;
 }
