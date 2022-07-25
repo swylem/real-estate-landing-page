@@ -171,6 +171,10 @@ a {
 }
 
 /* Popular Section*/
+.popular-container {
+    margin-bottom: 128px;
+}
+
 .popular-headings {
     display: flex;
     align-items: center;
