@@ -84,6 +84,7 @@ a {
 .head-content {
     background: url("./images/hero-image-edited.jpg");
     background-size: cover;
+    background-position: 16%;
     filter: contrast(1.05) saturate(115%) brightness(1.05);
     border-radius: 48px;
 }
@@ -241,4 +242,70 @@ a {
     align-items: center;
     gap: 48px;
     margin-top: 24px;
+}
+
+/* Service Section*/
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-images {
+    flex: 1.7;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    min-width: 456px;
+}
+
+.service-images img {
+    flex: 1 1 0px;
+    position: relative;
+    min-width: 50%;
+    height: 800px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.7));
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.service-images img:nth-child(2) {
+    right: 32px;
+    top: 16px;
+}
+
+.service-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;  
+    min-width: 352px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.service-list li {
+    flex: 1;
+    list-style-position: inside;
+    font-size: 0.85rem;
+}
+
+.service-list span {
+    position: relative;
+    left: -16px;
+    top: -4px;
+}
+
+.service-list li::marker {
+    font-size: 24px;
+    color: #014dc1;
 }
