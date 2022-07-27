@@ -328,6 +328,7 @@ a {
 
 .testimonial-headings {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
