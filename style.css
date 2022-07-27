@@ -10,7 +10,7 @@
 
 body {
     margin: 0 auto;
-    padding: 32px 64px;
+    padding: 0px 64px;
 }
 
 a {
@@ -251,6 +251,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 128px;
 }
 
 .service-images {
@@ -310,4 +311,73 @@ a {
 .service-list li::marker {
     font-size: 24px;
     color: #014dc1;
+}
+
+
+/*Testimonial Section*/
+.testimonial-container {
+    margin-left: -64px;
+    margin-right: -64px;
+    padding: 32px 64px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #16171e;
+    color: white;
+}
+
+.testimonial-headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-container hr {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #817e7c;
+}
+
+.testimonial-quote-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 64px;
+}
+
+.testimonial-quote-author {
+    line-height: 8px;
+}
+
+.testimonial-quote-author h3     {
+    color: #817e7c;
+}
+
+.testimonial-quote {
+    flex: 1;
+    min-width: 352px;
+}
+
+.testimonial-quote p {
+    padding: 0px 32px;
+    margin: 0;
+}
+
+.fa-quote-right {
+    float: right;
+}
+
+.testimonial-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.testimonial-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #817e7c;
+    font-weight: bolder;
+    min-width: 96px;
 }
