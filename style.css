@@ -409,7 +409,7 @@ a {
 }
 
 .faqs-right {
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .faq-box {
