@@ -331,8 +331,57 @@
             </div>
         </div>
     </div>
-    <div class="faqs-container"></div>
-    <div class="copyright-container"></div>
+    <div class="faqs-container">
+        <div class="faqs-left faqs-headings">
+            <h2>Frequently Asked Question</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quasi.</p>
+            <button class="blackbg-btn">See More</button>
+        </div>
+        <div class="faqs-right">
+            <div class="faq-box">
+                <div class="faq-question">
+                    <h4>Do you offer home loan services?</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="faq-answer">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.</p>
+                </div>   
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">
+                    <h4>What is duration of payment?</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="faq-answer">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.</p>
+                </div>   
+            </div>
+            <div class="faq-box">
+                <div class="faq-question">
+                    <h4>What types of properties are listed?</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="faq-answer">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, optio.</p>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="copyright-container">
+        <p>All Rights Reserved</p>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/ec2f69c671.js" crossorigin="anonymous"></script>
+<script>    
+    const faqs = document.querySelectorAll(".faq-box")
+
+    faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+            faq.classList.toggle("active");
+        })
+    })
+</script>
 </html>
